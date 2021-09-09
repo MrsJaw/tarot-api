@@ -1,0 +1,12 @@
+C:\Users\jawwi\source\repos\TarotApi\Domain\bin\Debug\net5.0\TarotApi.Domain.deps.json
+C:\Users\jawwi\source\repos\TarotApi\Domain\bin\Debug\net5.0\TarotApi.Domain.dll
+C:\Users\jawwi\source\repos\TarotApi\Domain\bin\Debug\net5.0\ref\TarotApi.Domain.dll
+C:\Users\jawwi\source\repos\TarotApi\Domain\bin\Debug\net5.0\TarotApi.Domain.pdb
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.csproj.AssemblyReference.cache
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.AssemblyInfoInputs.cache
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.AssemblyInfo.cs
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.dll
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\ref\TarotApi.Domain.dll
+C:\Users\jawwi\source\repos\TarotApi\Domain\obj\Debug\net5.0\TarotApi.Domain.pdb

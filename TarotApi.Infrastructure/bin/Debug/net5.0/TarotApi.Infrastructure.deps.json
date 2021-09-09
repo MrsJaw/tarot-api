@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TarotApi.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TarotApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TarotApi.Infrastructure.dll": {}
+        }
+      },
+      "TarotApi.Domain/1.0.0": {
+        "runtime": {
+          "TarotApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TarotApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TarotApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
