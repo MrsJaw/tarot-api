@@ -33,18 +33,26 @@ namespace TarotApi.IntegrationTests
         }
 
         [TestMethod]
-        public async Task Do_Single_Card_Reading_Test()
+        public async Task Do_Reading_Tests()
         {
-            var response = await TarotController.GET_DoReadingAsync(_client, ReadingType.SingleCard.ToString());
+            await Do_Reading(ReadingType.SingleCard, 1);
+            await Do_Reading(ReadingType.MindBodySpirit, 3);
+            await Do_Reading(ReadingType.BrickByBrick, 7);
+            await Do_Reading(ReadingType.WaxingCrescent, 6);
+        }
+
+        public async Task Do_Reading(ReadingType type, int expectedCardCount)
+        {
+            var response = await TarotController.GET_DoReadingAsync(_client, type.ToString());
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.OK);
             var reading = await response.ReadJsonResponse<ReadingViewModel>();
-            reading.Draws.Count().Should().Be(1);
+            reading.Draws.Count().Should().Be(expectedCardCount);
             var firstReading = reading.Draws.Select(d => d.Card);
 
-            response = await TarotController.GET_DoReadingAsync(_client, ReadingType.SingleCard.ToString());
+            response = await TarotController.GET_DoReadingAsync(_client, type.ToString());
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.OK);
             reading = await response.ReadJsonResponse<ReadingViewModel>();
-            reading.Draws.Count().Should().Be(1);
+            reading.Draws.Count().Should().Be(expectedCardCount);
             var secondReading = reading.Draws.Select(d => d.Card);
             secondReading.Should().NotContainInOrder(firstReading);
 

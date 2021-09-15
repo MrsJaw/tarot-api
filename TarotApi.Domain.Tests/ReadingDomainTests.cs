@@ -44,7 +44,7 @@ namespace TarotApi.Domain.Tests
 
             var result = _readingDomain.DoTarotReading(ReadingType.MindBodySpirit);
 
-            result.Count().Should().Be(3);
+            result.Count().Should().Be(78);
             result.Select(d => d.Card).Should().Contain(cards);                
             result.Select(d => d.Card).Should().NotContainInOrder(cards);                
         }
