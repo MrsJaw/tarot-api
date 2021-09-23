@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TarotApi.Domain.Models;
 using TarotApi.Domain.Providers;
 using TarotApi.Infrastructure.Models;

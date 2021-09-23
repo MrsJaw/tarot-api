@@ -29,7 +29,7 @@ namespace TarotApi.Domain.Tests
             var reading = new Dictionary<ReadingType, List<Draw>>();
 
             reading.Add(ReadingType.MindBodySpirit, new List<Draw>());
-            for(int i = 0; i < 78; i++)
+            for (int i = 0; i < 78; i++)
             {
                 var draw = Fakers.DrawFaker.Generate();
                 reading[ReadingType.MindBodySpirit].Add(draw);
@@ -45,8 +45,8 @@ namespace TarotApi.Domain.Tests
             var result = _readingDomain.DoTarotReading(ReadingType.MindBodySpirit);
 
             result.Count().Should().Be(78);
-            result.Select(d => d.Card).Should().Contain(cards);                
-            result.Select(d => d.Card).Should().NotContainInOrder(cards);                
+            result.Select(d => d.Card).Should().Contain(cards);
+            result.Select(d => d.Card).Should().NotContainInOrder(cards);
         }
     }
 }
